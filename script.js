@@ -128,7 +128,7 @@ if (collageRoot && collageSites.length) {
 
 const revealTargets = [
   ...document.querySelectorAll(
-    ".audience-panel > *, .services .section-title, .services__row article, .process-step, .pricing__intro, .pricing-card, .pricing-note, .about-panel > *, .faq__inner > *, .contact__grid > *"
+    ".audience-panel > *, .page-intro > *, .services .section-title, .services__row article, .process-step, .pricing__intro, .pricing-card, .pricing-note, .faq__inner > *, .contact__grid > *"
   )
 ];
 

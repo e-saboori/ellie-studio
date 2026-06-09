@@ -4,9 +4,9 @@ A warm, minimal static website for Ellie Studio, a Toronto website design and de
 
 ## Features
 
-- Responsive single-page layout
+- Responsive multi-page layout
 - Clickable rotating client website previews
-- Services, process, and pricing sections
+- Dedicated Home, Services, Pricing, FAQ, and Contact pages
 - Accessible FAQ accordions
 - Contact inquiry form
 - Scroll reveal animations with reduced-motion support
@@ -22,13 +22,17 @@ npx serve .
 
 ## Project Structure
 
-- `index.html` - page content and semantic structure
+- `index.html` - Home page
+- `services.html` - services and process
+- `pricing.html` - packages and pricing notes
+- `faq.html` - frequently asked questions and FAQ schema
+- `contact.html` - project inquiry form
 - `styles.css` - responsive layout and visual system
 - `script.js` - navigation, showcase rotation, and reveal behavior
 - `assets/` - images, icons, decorative SVGs, and website previews
 - `docs/COLOR-SYSTEM.md` - palette roles and usage guidance
+- `docs/SITE-STRUCTURE.md` - page ownership and navigation map
 
 ## Deployment
 
 The site is fully static and can be deployed through GitHub Pages, Netlify, Vercel, or another static host.
-

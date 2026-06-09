@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Your Small Business Website | Ellie Studio</title>
+  <meta name="description" content="Tell Ellie Studio about your small business website project, timeline, preferred package, and launch needs.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav chrome-shell" aria-label="Primary navigation">
+      <a class="logo" href="index.html" aria-label="Ellie Studio home"><span class="logo__script">Ellie</span><span class="logo__sub">STUDIO</span></a>
+      <div class="nav__links" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a class="is-active" href="contact.html" aria-current="page">Contact</a>
+      </div>
+      <a class="btn btn--primary nav__cta is-active" href="contact.html">Start Your Website</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main class="subpage contact-page">
+    <section class="contact">
+      <div class="page-shell contact__grid">
+        <div class="contact__copy">
+          <img class="envelope" src="assets/icons/envelope.svg" alt="" aria-hidden="true">
+          <div><p class="mini-label">Tell Me About Your Project</p><h1>Start Your Website</h1><p>Not sure what you need yet? A rough idea is enough.</p></div>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/REPLACE_ME" method="POST">
+          <label><span>Name</span><input type="text" name="name" autocomplete="name" required></label>
+          <label><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
+          <label><span>Business Name</span><input type="text" name="business-name" autocomplete="organization"></label>
+          <label><span>Business Type</span><select name="business-type" required><option value="">Select one</option><option>Service Business</option><option>Creative Business</option><option>Beauty / Wellness</option><option>Architecture / Design</option><option>Consulting</option><option>Other Small Business</option></select></label>
+          <fieldset class="website-status"><legend>Do you already have a website?</legend><label><input type="radio" name="existing-website" value="Yes" required><span>Yes</span></label><label><input type="radio" name="existing-website" value="No"><span>No</span></label></fieldset>
+          <label><span>Project Timeline</span><select name="timeline" required><option value="">Select one</option><option>As soon as possible</option><option>Within 1 month</option><option>Within 2&ndash;3 months</option><option>In 3+ months</option><option>I&rsquo;m not sure yet</option></select></label>
+          <label><span>Package of Interest <small>(optional)</small></span><select name="package"><option value="">Select one</option><option>Simple Start &mdash; from $500 CAD</option><option>Small Business Website &mdash; from $1,000 CAD</option><option>Launch &amp; Setup Support &mdash; from $350 CAD</option><option>I&rsquo;m not sure yet</option></select></label>
+          <label><span>Budget Range <small>(optional)</small></span><select name="budget"><option value="">Select one</option><option>Under $1,500</option><option>$1,500&ndash;$3,000</option><option>$3,000&ndash;$5,000</option><option>$5,000+</option><option>I&rsquo;m not sure yet</option></select></label>
+          <label class="message-label"><span>Message</span><textarea name="message" placeholder="Tell me about your business and what you have in mind..." required></textarea></label>
+          <p class="form-note">Not sure what you need yet? A rough idea is enough.</p>
+          <button class="btn btn--primary form-submit" type="submit">Start Your Website</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="chrome-shell footer__inner"><a class="logo footer__logo" href="index.html" aria-label="Ellie Studio home"><span class="logo__script">Ellie</span><span class="logo__sub">STUDIO</span></a><p>Design, development, and launch support for small business websites.</p><img class="footer__heart" src="assets/icons/heart.svg" alt="" aria-hidden="true"></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
