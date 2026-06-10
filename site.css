@@ -1336,8 +1336,8 @@ h2 {
 }
 
 .pricing-card--featured .pricing-card__best {
-  min-height: 109px;
-  transform: translateY(-5px);
+  min-height: 111px;
+  transform: translateY(-3px);
 }
 
 .pricing-card:not(.pricing-card--featured) .pricing-card__best {
