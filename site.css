@@ -575,7 +575,7 @@ h2 {
 .doodle-coffee { --doodle-delay: 1.46s; width: 76px; left: calc(2% - 5px); top: calc(30% + 10px); }
 .doodle-cat { --doodle-delay: .9s; width: 142px; right: 9%; top: 17%; }
 .doodle-light { --doodle-delay: 1.03s; width: 101px; right: 16%; top: 40%; }
-.doodle-letter { --doodle-delay: 1.17s; width: 82px; left: calc(22% + 15px); top: calc(55% - 30px); }
+.doodle-letter { --doodle-delay: 1.17s; width: 82px; left: calc(22% + 45px); top: calc(55% - 70px); }
 .doodle-spark-star { --doodle-delay: 1.3s; width: 109px; left: 60%; top: 13%; }
 .doodle-spark { width: 54px; right: 20%; top: 16%; }
 .doodle-squiggle { width: 58px; right: 7.5%; top: 39%; }
@@ -885,8 +885,8 @@ h2 {
   object-fit: contain;
   object-position: center;
   filter: saturate(.82) contrast(.96);
-  -webkit-mask-image: radial-gradient(ellipse at 55% 54%, #000 38%, rgba(0, 0, 0, .94) 54%, rgba(0, 0, 0, .58) 72%, rgba(0, 0, 0, .16) 88%, transparent 100%);
-  mask-image: radial-gradient(ellipse at 55% 54%, #000 38%, rgba(0, 0, 0, .94) 54%, rgba(0, 0, 0, .58) 72%, rgba(0, 0, 0, .16) 88%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse at 55% 54%, #000 30%, rgba(0, 0, 0, .88) 46%, rgba(0, 0, 0, .48) 64%, rgba(0, 0, 0, .1) 82%, transparent 98%);
+  mask-image: radial-gradient(ellipse at 55% 54%, #000 30%, rgba(0, 0, 0, .88) 46%, rgba(0, 0, 0, .48) 64%, rgba(0, 0, 0, .1) 82%, transparent 98%);
 }
 
 .services-photo-shape,
@@ -1286,6 +1286,7 @@ h2 {
 }
 
 .pricing-card--featured .pricing-card__best {
+  min-height: 109px;
   transform: translateY(-5px);
 }
 
@@ -1794,7 +1795,7 @@ h2 {
   .doodle-cat { width: 68px; right: 2%; top: 16%; }
   .doodle-heart { width: 38px; left: 8%; top: 38%; }
   .doodle-star-yellow { width: 43px; left: 17%; top: 56%; }
-  .doodle-cloud-left { width: 66px; left: 2%; top: 48%; }
+  .doodle-cloud-left { width: 66px; left: calc(2% - 5px); top: 48%; }
   .doodle-coffee { width: 47px; left: 5%; top: 28%; }
   .doodle-squiggle { display: none; }
   .doodle-light { width: 51px; right: 4%; top: 42%; }
@@ -1813,12 +1814,12 @@ h2 {
   .doodle-wiggle-extra-two { width: 28px; }
   .doodle-wiggle-notebook { width: 25px; left: 19%; top: 78%; }
   .doodle-stars-new { width: 34px; left: 34%; top: 5%; }
-  .doodle-hearts-new { width: 39px; right: 4%; top: 47%; }
-  .doodle-heart-orange-extra { width: 28px; left: 35%; top: 82%; }
-  .doodle-heart-yellow-extra { width: 23px; left: 51%; top: 76%; }
-  .doodle-notebook { width: 49px; left: 7%; top: 72%; }
+  .doodle-hearts-new { width: 36px; right: 15%; top: 55%; }
+  .doodle-heart-orange-extra { width: 27px; left: 26%; top: 57%; }
+  .doodle-heart-yellow-extra { width: 22px; left: 43%; top: 55%; }
+  .doodle-notebook { width: 49px; left: 7%; top: calc(72% - 40px); }
   .doodle-leaf-new { width: 39px; right: 7%; top: 57%; }
-  .doodle-note-new { width: 50px; right: 7%; top: 73%; }
+  .doodle-note-new { width: 43px; right: 24%; top: 37%; opacity: .38 !important; }
   .doodle-star-cat-side { width: 31px; right: 4%; top: 31%; }
   .doodle-stars-under-leaf { width: 31px; right: 17%; top: 66%; }
 
