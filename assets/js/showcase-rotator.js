@@ -3,13 +3,15 @@ const showcaseProjects = [
     tag: "ARCHITECTURE STUDIO",
     title: "Architecture website",
     image: "assets/collage/econset.png",
-    alt: "Architecture studio website screenshot"
+    alt: "Architecture studio website screenshot",
+    url: "https://www.econset.ca"
   },
   {
     tag: "BEAUTY STUDIO",
     title: "Beauty website",
     image: "assets/collage/sepid.png",
-    alt: "Beauty studio website screenshot"
+    alt: "Beauty studio website screenshot",
+    url: "https://sepidbeauty.ca"
   }
 ];
 
@@ -18,9 +20,13 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
 
 if (showcaseStack && showcaseProjects.length) {
   showcaseProjects.forEach((project, index) => {
-    const card = document.createElement("article");
+    const card = document.createElement("a");
     card.className = "showcase-card";
     card.dataset.index = String(index);
+    card.href = project.url;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
+    card.setAttribute("aria-label", `Visit ${project.title}`);
     card.innerHTML = `
       <div class="showcase-browser-bar" aria-hidden="true">
         <span></span><span></span><span></span>
@@ -41,6 +47,7 @@ if (showcaseStack && showcaseProjects.length) {
       const position = (index - activeIndex + cards.length) % cards.length;
       card.dataset.position = String(Math.min(position, 3));
       card.setAttribute("aria-hidden", position > 0 ? "true" : "false");
+      card.tabIndex = position === 0 ? 0 : -1;
     });
   }
 
