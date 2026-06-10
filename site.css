@@ -1337,6 +1337,7 @@ h2 {
 
 .pricing-card--featured .pricing-card__best {
   min-height: 111px;
+  margin-top: 20px;
   transform: translateY(-3px);
 }
 
