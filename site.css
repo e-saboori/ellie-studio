@@ -1338,11 +1338,10 @@ h2 {
 .pricing-card--featured .pricing-card__best {
   min-height: 111px;
   margin-top: 20px;
-  transform: translateY(-3px);
 }
 
 .pricing-card:not(.pricing-card--featured) .pricing-card__best {
-  transform: translateY(5px);
+  transform: translateY(2px);
 }
 
 .pricing-card__best p {
