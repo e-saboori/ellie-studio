@@ -27,9 +27,11 @@ npx serve .
 - `pricing.html` - packages and pricing notes
 - `faq.html` - frequently asked questions and FAQ schema
 - `contact.html` - project inquiry form
-- `styles.css` - responsive layout and visual system
-- `script.js` - navigation, showcase rotation, and reveal behavior
-- `assets/` - images, icons, decorative SVGs, and website previews
+- `site.css` - unified design system and responsive styles for every page
+- `assets/js/site-components.js` - shared header and footer components used by every page
+- `script.js` - navigation and reveal behavior
+- `assets/js/showcase-rotator.js` - data-driven homepage showcase rotation
+- `assets/` - logos, doodles, icons, and website previews
 - `docs/COLOR-SYSTEM.md` - palette roles and usage guidance
 - `docs/SITE-STRUCTURE.md` - page ownership and navigation map
 

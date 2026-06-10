@@ -4,84 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Custom Websites for Small Businesses in Toronto | Ellie Studio</title>
-  <meta name="description" content="Ellie Studio designs, builds, and launches custom websites for small businesses in Toronto and across Canada. Website design, development, mobile layout, domain setup, and launch support.">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Ellie Studio designs, builds, and launches custom websites for small businesses in Toronto and across Canada.">
+  <link rel="stylesheet" href="site.css">
 </head>
-<body>
-  <header class="site-header">
-    <nav class="nav chrome-shell" aria-label="Primary navigation">
-      <a class="logo" href="index.html" aria-label="Ellie Studio home">
-        <span class="logo__script">Ellie</span>
-        <span class="logo__sub">STUDIO</span>
-      </a>
-      <div class="nav__links" id="mobile-menu">
-        <a class="is-active" href="index.html" aria-current="page">Home</a>
-        <a href="services.html">Services</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <a class="btn btn--primary nav__cta" href="contact.html">Start Your Website</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </header>
+<body class="home-page">
+  <div data-site-header></div>
 
-  <main id="home">
-    <section class="hero">
-      <div class="page-shell hero__grid">
-        <div class="hero__content">
-          <h1>Custom Websites for Small Businesses in <span class="text-clay">Toronto</span></h1>
-          <p class="hero-tagline">Simple, polished websites designed, built, and launched from start to finish.</p>
-          <p>I design and build simple, beautiful static websites for small businesses &mdash; from the first idea to the live domain.</p>
-          <p class="hero-clarity">Website design, development, mobile layout, contact forms, domain setup, and launch support &mdash; all handled for you.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="contact.html">Start Your Website</a>
-            <a class="btn btn--secondary" href="services.html">View Services</a>
+  <main>
+    <section class="hero" id="home">
+      <span class="ambient-shape ambient-circle ambient-circle-one" aria-hidden="true"></span>
+      <span class="ambient-shape ambient-circle ambient-circle-two" aria-hidden="true"></span>
+      <span class="ambient-shape ambient-circle ambient-circle-three" aria-hidden="true"></span>
+      <span class="ambient-shape ambient-circle ambient-circle-four" aria-hidden="true"></span>
+      <span class="ambient-shape ambient-blob ambient-blob-one" aria-hidden="true"></span>
+      <span class="ambient-shape ambient-blob ambient-blob-two" aria-hidden="true"></span>
+      <span class="ambient-shape ambient-blob ambient-blob-three" aria-hidden="true"></span>
+      <span class="ambient-shape ambient-blob ambient-blob-four" aria-hidden="true"></span>
+
+      <img class="doodle doodle-laptop" src="assets/doodles/laptop.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-heart" src="assets/doodles/heart.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-star-yellow" src="assets/doodles/star.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-cloud-left" src="assets/doodles/cloud.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-mouse" src="assets/doodles/mouse.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-cat" src="assets/doodles/cat.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-light" src="assets/doodles/light.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-letter" src="assets/doodles/letter.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-spark-star" src="assets/doodles/sparkandstar.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-spark" src="assets/doodles/spark.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-squiggle" src="assets/doodles/wiggle.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-coffee" src="assets/doodles/coffee.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-star-extra-one" src="assets/doodles/star.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-star-extra-two" src="assets/doodles/star.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-spark-extra-one" src="assets/doodles/spark.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-spark-extra-two" src="assets/doodles/spark.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-wiggle-extra-one" src="assets/doodles/wiggle.png" alt="" aria-hidden="true">
+      <img class="doodle doodle-wiggle-extra-two" src="assets/doodles/wiggle.png" alt="" aria-hidden="true">
+
+      <div class="hero-inner">
+        <h1 class="hero-title">Custom Websites<br>for Small Businesses<br>in <span>Toronto</span></h1>
+        <p class="hero-lead">Simple, polished websites designed, built,<br>and launched from start to finish.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">Start Your Website</a>
+          <a class="btn btn-secondary" href="services.html">View Services</a>
+        </div>
+        <p class="micro-note"><img src="assets/icons/heart.svg" alt="" aria-hidden="true"> Designed with care. Built to last.</p>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="who-section">
+        <div class="who-copy">
+          <h2>Built for small business owners who want a clear, professional website</h2>
+
+          <div class="who-list">
+            <div class="who-item">
+              <div class="who-icon"><img src="assets/icons/service-pages.svg" alt="" aria-hidden="true"></div>
+              <div><h3>You need a website</h3><p>but don&rsquo;t know where to start.</p></div>
+            </div>
+            <div class="who-item">
+              <div class="who-icon"><img src="assets/icons/service-development.svg" alt="" aria-hidden="true"></div>
+              <div><h3>You don&rsquo;t want to deal with tech</h3><p>confusing tech, templates, hosting, or domains.</p></div>
+            </div>
+            <div class="who-item">
+              <div class="who-icon"><img src="assets/icons/spark.svg" alt="" aria-hidden="true"></div>
+              <div><h3>You want a clean website</h3><p>that feels professional and easy to use.</p></div>
+            </div>
+            <div class="who-item">
+              <div class="who-icon"><img src="assets/icons/heart.svg" alt="" aria-hidden="true"></div>
+              <div><h3>You want one person to help</h3><p>with design, development, and launch.</p></div>
+            </div>
           </div>
-          <p class="care-note"><img src="assets/icons/heart.svg" alt="" aria-hidden="true"> Designed with care. Built to last.</p>
         </div>
 
-        <div class="hero-collage" id="hero-collage" aria-label="Animated website design collage">
-          <img class="decor decor--spark-left" src="assets/icons/spark.svg" alt="" aria-hidden="true">
-          <img class="decor decor--spark-right" src="assets/icons/spark.svg" alt="" aria-hidden="true">
-          <img class="decor decor--olive" src="assets/decor/hero-olive.svg" alt="" aria-hidden="true">
-          <img class="decor decor--paper" src="assets/decor/hero-paper.svg" alt="" aria-hidden="true">
-          <img class="decor decor--sand" src="assets/decor/hero-sand.svg" alt="" aria-hidden="true">
-          <img class="decor decor--grid" src="assets/decor/grid.svg" alt="" aria-hidden="true">
-          <div class="collage-cards" id="collage-cards"></div>
-          <img class="hero-heart" src="assets/icons/heart.svg" alt="" aria-hidden="true">
+        <div class="showcase">
+          <div class="showcase-stack" id="showcase-stack" aria-label="Rotating examples of website designs"></div>
+
+          <div class="showcase-note">
+            <svg class="showcase-pointer" viewBox="0 0 92 72" aria-hidden="true">
+              <path d="M86 66C61 64 39 55 34 39C30 27 39 17 55 20C68 23 67 39 54 39C37 39 18 27 9 8"></path>
+              <path d="M5 17L9 7L19 11"></path>
+            </svg>
+            <span>Examples of simple, beautiful<br>websites I create <img src="assets/icons/heart.svg" alt="" aria-hidden="true"></span>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="audience" aria-labelledby="audience-title">
-      <div class="page-shell audience-panel">
-        <div class="audience-panel__intro">
-          <p class="mini-label">Who This Is For</p>
-          <h2 id="audience-title">Built for small business owners who want a clear, professional website</h2>
-        </div>
-        <ul class="audience-list">
-          <li>You need a website but don&rsquo;t know where to start.</li>
-          <li>You don&rsquo;t want to deal with confusing tech, templates, hosting, or domains.</li>
-          <li>You want a clean website that feels professional and easy to use.</li>
-          <li>You want one person to help with design, development, and launch.</li>
-        </ul>
-      </div>
     </section>
-
   </main>
 
-  <footer class="footer">
-    <div class="chrome-shell footer__inner">
-      <a class="logo footer__logo" href="index.html" aria-label="Ellie Studio home"><span class="logo__script">Ellie</span><span class="logo__sub">STUDIO</span></a>
-      <p>Design, development, and launch support for small business websites.</p>
-      <img class="footer__heart" src="assets/icons/heart.svg" alt="" aria-hidden="true">
-    </div>
-  </footer>
+  <div data-site-footer></div>
 
-  <script src="assets/collage/sites.js"></script>
+  <script src="assets/js/site-components.js"></script>
   <script src="script.js"></script>
+  <script src="assets/js/showcase-rotator.js"></script>
 </body>
 </html>

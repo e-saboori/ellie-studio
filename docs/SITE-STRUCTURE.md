@@ -28,7 +28,9 @@ The current page is identified with `aria-current="page"` and the existing activ
 
 ## Shared Assets
 
-- `styles.css` contains the shared design system and responsive page layouts.
-- `script.js` controls the mobile menu, homepage showcase, internal anchor offsets, and scroll reveals.
-- `assets/` contains the shared icons, decorative SVG files, and images.
+- `site.css` contains the unified design system and responsive layout for every page.
+- `assets/js/site-components.js` renders the shared header and footer for every page.
+- `script.js` controls the mobile menu, internal anchor offsets, and scroll reveals.
+- `assets/js/showcase-rotator.js` renders and rotates the homepage website samples.
+- `assets/` contains the shared logo, doodles, icons, and website previews.
 

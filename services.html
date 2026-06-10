@@ -5,58 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Design Services for Small Businesses | Ellie Studio</title>
   <meta name="description" content="Custom website design, responsive development, landing pages, contact forms, domain connection, and launch support for small businesses.">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="site.css">
 </head>
-<body>
-  <header class="site-header">
-    <nav class="nav chrome-shell" aria-label="Primary navigation">
-      <a class="logo" href="index.html" aria-label="Ellie Studio home"><span class="logo__script">Ellie</span><span class="logo__sub">STUDIO</span></a>
-      <div class="nav__links" id="mobile-menu">
-        <a href="index.html">Home</a>
-        <a class="is-active" href="services.html" aria-current="page">Services</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <a class="btn btn--primary nav__cta" href="contact.html">Start Your Website</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
-    </nav>
-  </header>
+<body class="services-page">
+  <div data-site-header></div>
 
   <main class="subpage">
-    <section class="page-intro page-shell">
-      <p class="mini-label">Website Services</p>
-      <h1>What I Can Help You With</h1>
-      <p>Clear design, responsive development, and practical launch support for a professional small business website.</p>
+    <section class="services-hero">
+      <div class="page-shell services-hero__grid">
+        <div class="services-hero__copy">
+          <span class="services-doodle services-doodle--spark" aria-hidden="true"></span>
+          <p class="mini-label">Website Services</p>
+          <h1><span>What I Can</span><span>Help You With</span></h1>
+          <p>Everything you need for a beautiful, functional website that works for your business.</p>
+          <img class="services-doodle services-doodle--green-heart" src="assets/icons/heart.svg" alt="" aria-hidden="true">
+        </div>
+
+        <div class="services-hero__visual">
+          <span class="services-photo-shape services-photo-shape--one" aria-hidden="true"></span>
+          <span class="services-photo-shape services-photo-shape--two" aria-hidden="true"></span>
+          <span class="services-photo-shape services-photo-shape--three" aria-hidden="true"></span>
+          <img class="services-hero__photo" src="assets/services-hero.png" alt="Warm desk with a laptop, leafy vase, and ceramic mug">
+          <span class="services-doodle services-doodle--rays" aria-hidden="true"></span>
+          <img class="services-doodle services-doodle--orange-heart" src="assets/icons/heart.svg" alt="" aria-hidden="true">
+        </div>
+      </div>
     </section>
 
-    <section class="services services-process">
+    <section class="services-catalog">
       <div class="page-shell">
-        <div class="services__row" aria-label="Website services">
-          <article><img src="assets/icons/service-design.svg" alt="" aria-hidden="true"><h2>Website Design</h2><p>Clean, modern layouts designed around your business, services, and ideal clients.</p></article>
-          <article><img src="assets/icons/service-development.svg" alt="" aria-hidden="true"><h2>Website Development</h2><p>Responsive static websites built to load fast and work well on desktop and mobile.</p></article>
-          <article><img src="assets/icons/service-pages.svg" alt="" aria-hidden="true"><h2>Landing Pages</h2><p>Focused one-page websites for promotions, services, launches, or simple business needs.</p></article>
-          <article><img src="assets/icons/service-pages.svg" alt="" aria-hidden="true"><h2>Service Pages</h2><p>Clear pages that explain your services and help visitors understand what you offer.</p></article>
-          <article><img src="assets/icons/service-contact.svg" alt="" aria-hidden="true"><h2>Contact Forms</h2><p>Simple inquiry forms so potential clients can easily reach out.</p></article>
-          <article><img src="assets/icons/service-mobile.svg" alt="" aria-hidden="true"><h2>Mobile-Friendly Layout</h2><p>Responsive layouts that look polished and easy to use on phones, tablets, and desktops.</p></article>
-          <article><img src="assets/icons/service-domain.svg" alt="" aria-hidden="true"><h2>Domain Connection</h2><p>Support connecting your custom domain so your website is ready to share.</p></article>
-          <article><img src="assets/icons/service-deployment.svg" alt="" aria-hidden="true"><h2>Deployment Support</h2><p>Help publishing your website and checking that everything works properly.</p></article>
-          <article><img src="assets/icons/service-copy.svg" alt="" aria-hidden="true"><h2>Copy Structure &amp; Layout</h2><p>Guidance on organizing your content so the website feels clear and easy to read.</p></article>
+        <div class="services-grid" aria-label="Website services">
+          <article class="service-card"><span class="service-card__icon"><img src="assets/icons/service-design.svg" alt="" aria-hidden="true"></span><h2>Website Design</h2><p>Custom, modern designs that reflect your brand.</p></article>
+          <article class="service-card"><span class="service-card__icon"><img src="assets/icons/service-development.svg" alt="" aria-hidden="true"></span><h2>Website Development</h2><p>Fast, responsive websites that work on all devices.</p></article>
+          <article class="service-card"><span class="service-card__icon"><img src="assets/icons/service-pages.svg" alt="" aria-hidden="true"></span><h2>Landing Pages</h2><p>High-converting pages for promotions or launches.</p></article>
+          <article class="service-card"><span class="service-card__icon"><img src="assets/icons/service-copy.svg" alt="" aria-hidden="true"></span><h2>Service Pages</h2><p>Clear pages that explain what you do and why it matters.</p></article>
+          <article class="service-card"><span class="service-card__icon"><img src="assets/icons/service-contact.svg" alt="" aria-hidden="true"></span><h2>Contact Forms</h2><p>Simple forms to help you connect with clients.</p></article>
+          <article class="service-card"><span class="service-card__icon"><img src="assets/icons/service-mobile.svg" alt="" aria-hidden="true"></span><h2>Mobile-Friendly Layout</h2><p>Seamless experience on phones, tablets, and desktops.</p></article>
+          <article class="service-card"><span class="service-card__icon"><img src="assets/icons/service-domain.svg" alt="" aria-hidden="true"></span><h2>Domain Connection</h2><p>Connect your domain so your website is live and accessible.</p></article>
+          <article class="service-card"><span class="service-card__icon"><img src="assets/icons/service-deployment.svg" alt="" aria-hidden="true"></span><h2>Deployment Support</h2><p>I handle the tech so your site goes live without stress.</p></article>
+          <article class="service-card"><span class="service-card__icon"><img src="assets/icons/service-copy.svg" alt="" aria-hidden="true"></span><h2>Copy Structure &amp; Layout</h2><p>Organized content that&rsquo;s easy to read and understand.</p></article>
         </div>
+      </div>
+    </section>
 
-        <h2 class="section-title process-title">From Idea to Live Website</h2>
-        <div class="process__row">
-          <article class="process-step"><span class="process-icon"><img src="assets/icons/plan.svg" alt="" aria-hidden="true"></span><div><span class="process-step__num">01</span><h3>Plan</h3><p>We define your website goals, pages, content needs, and visual direction.</p></div></article>
-          <article class="process-step"><span class="process-icon"><img src="assets/icons/design.svg" alt="" aria-hidden="true"></span><div><span class="process-step__num">02</span><h3>Design</h3><p>I create the layout, structure, and visual direction for your website.</p></div></article>
-          <article class="process-step"><span class="process-icon"><img src="assets/icons/build.svg" alt="" aria-hidden="true"></span><div><span class="process-step__num">03</span><h3>Build</h3><p>I develop the website and make it responsive for desktop, tablet, and mobile.</p></div></article>
-          <article class="process-step"><span class="process-icon"><img src="assets/icons/rocket.svg" alt="" aria-hidden="true"></span><div><span class="process-step__num">04</span><h3>Launch</h3><p>I deploy the site, connect your domain, and check that everything works.</p></div></article>
+    <section class="services-process" aria-labelledby="process-title">
+      <div class="page-shell">
+        <h2 id="process-title">From Idea to Live Website</h2>
+        <span class="services-process__accent" aria-hidden="true"></span>
+
+        <div class="services-process__steps">
+          <article class="services-step"><span class="services-step__icon"><img src="assets/icons/plan.svg" alt="" aria-hidden="true"></span><div><span class="services-step__num">01</span><h3>Plan</h3><p>We define your goals and plan the best approach.</p></div></article>
+          <article class="services-step"><span class="services-step__icon"><img src="assets/icons/design.svg" alt="" aria-hidden="true"></span><div><span class="services-step__num">02</span><h3>Design</h3><p>I design your website with a focus on your brand and audience.</p></div></article>
+          <article class="services-step"><span class="services-step__icon"><img src="assets/icons/build.svg" alt="" aria-hidden="true"></span><div><span class="services-step__num">03</span><h3>Build</h3><p>I build your site to be fast, responsive, and user-friendly.</p></div></article>
+          <article class="services-step"><span class="services-step__icon"><img src="assets/icons/rocket.svg" alt="" aria-hidden="true"></span><div><span class="services-step__num">04</span><h3>Launch</h3><p>We go live and make sure everything works perfectly.</p></div></article>
         </div>
-        <div class="page-cta"><a class="btn btn--primary" href="contact.html">Start Your Website</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><div class="chrome-shell footer__inner"><a class="logo footer__logo" href="index.html" aria-label="Ellie Studio home"><span class="logo__script">Ellie</span><span class="logo__sub">STUDIO</span></a><p>Design, development, and launch support for small business websites.</p><img class="footer__heart" src="assets/icons/heart.svg" alt="" aria-hidden="true"></div></footer>
+  <div data-site-footer></div>
+  <script src="assets/js/site-components.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -5,23 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Design FAQ | Ellie Studio</title>
   <meta name="description" content="Answers about Ellie Studio website design, development, domain connection, launch support, and working with small businesses across Canada.">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav chrome-shell" aria-label="Primary navigation">
-      <a class="logo" href="index.html" aria-label="Ellie Studio home"><span class="logo__script">Ellie</span><span class="logo__sub">STUDIO</span></a>
-      <div class="nav__links" id="mobile-menu">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="pricing.html">Pricing</a>
-        <a class="is-active" href="faq.html" aria-current="page">FAQ</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <a class="btn btn--primary nav__cta" href="contact.html">Start Your Website</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
-    </nav>
-  </header>
+  <div data-site-header></div>
 
   <main class="subpage">
     <section class="faq faq--page" aria-labelledby="faq-title">
@@ -39,7 +26,8 @@
     </section>
   </main>
 
-  <footer class="footer"><div class="chrome-shell footer__inner"><a class="logo footer__logo" href="index.html" aria-label="Ellie Studio home"><span class="logo__script">Ellie</span><span class="logo__sub">STUDIO</span></a><p>Design, development, and launch support for small business websites.</p><img class="footer__heart" src="assets/icons/heart.svg" alt="" aria-hidden="true"></div></footer>
+  <div data-site-footer></div>
+  <script src="assets/js/site-components.js"></script>
   <script src="script.js"></script>
   <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
