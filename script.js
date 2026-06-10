@@ -24,6 +24,13 @@ document.addEventListener("keydown", (event) => {
 
 const siteHeader = document.querySelector(".site-header");
 
+function updateHeaderScrollState() {
+  siteHeader?.classList.toggle("is-scrolled", window.scrollY > 8);
+}
+
+updateHeaderScrollState();
+window.addEventListener("scroll", updateHeaderScrollState, { passive: true });
+
 function scrollToSection(target, behavior = "smooth") {
   const headerHeight = siteHeader?.offsetHeight || 0;
   const top = target.getBoundingClientRect().top + window.scrollY - headerHeight - 20;

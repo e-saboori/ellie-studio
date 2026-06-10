@@ -18,6 +18,8 @@ function navigationMarkup() {
 }
 
 function headerComponent() {
+  const showCta = currentPage !== "faq.html";
+
   return `
     <header class="site-header">
       <nav class="nav chrome-shell" aria-label="Primary navigation">
@@ -27,7 +29,7 @@ function headerComponent() {
         <div class="nav__links" id="mobile-menu">
           ${navigationMarkup()}
         </div>
-        <a class="btn btn--primary nav__cta" href="contact.html">Start Your Website</a>
+        ${showCta ? '<a class="btn btn--primary nav__cta" href="contact.html">Start Your Website</a>' : '<span class="nav__cta-spacer" aria-hidden="true"></span>'}
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
           <span></span><span></span><span></span>
         </button>
