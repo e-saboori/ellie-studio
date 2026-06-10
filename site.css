@@ -422,6 +422,8 @@ h2 {
 .ambient-circle-four { width: 92px; height: 92px; left: 30%; bottom: 6%; background: color-mix(in srgb, var(--color-green-soft) 38%, transparent); }
 .ambient-circle-five { width: 74px; height: 74px; left: 4%; top: 29%; background: color-mix(in srgb, var(--color-sage) 26%, transparent); }
 .ambient-circle-six { width: 132px; height: 132px; right: 7%; top: 43%; background: color-mix(in srgb, var(--color-green-soft) 34%, transparent); }
+.ambient-circle-seven { width: 64px; height: 64px; left: 47%; top: 15%; background: color-mix(in srgb, var(--color-yellow-soft) 20%, transparent); }
+.ambient-circle-eight { width: 96px; height: 96px; left: 54%; bottom: 12%; background: color-mix(in srgb, var(--color-sage) 17%, transparent); }
 
 .ambient-blob {
   background: color-mix(in srgb, var(--color-green-soft) 38%, transparent);
@@ -494,6 +496,46 @@ h2 {
   border-radius: 67% 33% 42% 58% / 51% 64% 36% 49%;
   background: color-mix(in srgb, var(--color-yellow-soft) 13%, transparent);
   transform: rotate(9deg);
+}
+
+.ambient-blob-eight {
+  width: 210px;
+  height: 122px;
+  left: 40%;
+  top: 28%;
+  border-radius: 58% 42% 66% 34% / 43% 62% 38% 57%;
+  background: color-mix(in srgb, var(--color-green-soft) 18%, transparent);
+  transform: rotate(12deg);
+}
+
+.ambient-blob-nine {
+  width: 148px;
+  height: 188px;
+  right: 38%;
+  top: 45%;
+  border-radius: 39% 61% 55% 45% / 64% 42% 58% 36%;
+  background: color-mix(in srgb, var(--color-peach) 13%, transparent);
+  transform: rotate(-19deg);
+}
+
+.ambient-blob-ten {
+  width: 124px;
+  height: 76px;
+  left: 46%;
+  bottom: 5%;
+  border-radius: 68% 32% 45% 55% / 53% 67% 33% 47%;
+  background: color-mix(in srgb, var(--color-yellow-soft) 17%, transparent);
+  transform: rotate(23deg);
+}
+
+.ambient-blob-eleven {
+  width: 176px;
+  height: 108px;
+  right: 18%;
+  top: 68%;
+  border-radius: 46% 54% 69% 31% / 61% 38% 62% 39%;
+  background: color-mix(in srgb, var(--color-green) 10%, transparent);
+  transform: rotate(-8deg);
 }
 
 .doodle {
@@ -885,8 +927,16 @@ h2 {
   object-fit: contain;
   object-position: center;
   filter: saturate(.82) contrast(.96);
-  -webkit-mask-image: radial-gradient(ellipse at 55% 54%, #000 30%, rgba(0, 0, 0, .88) 46%, rgba(0, 0, 0, .48) 64%, rgba(0, 0, 0, .1) 82%, transparent 98%);
-  mask-image: radial-gradient(ellipse at 55% 54%, #000 30%, rgba(0, 0, 0, .88) 46%, rgba(0, 0, 0, .48) 64%, rgba(0, 0, 0, .1) 82%, transparent 98%);
+  -webkit-mask-image:
+    radial-gradient(ellipse at 55% 54%, #000 30%, rgba(0, 0, 0, .88) 46%, rgba(0, 0, 0, .48) 64%, rgba(0, 0, 0, .1) 82%, transparent 98%),
+    linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 15%, #000 85%, transparent 100%);
+  -webkit-mask-composite: source-in, source-in;
+  mask-image:
+    radial-gradient(ellipse at 55% 54%, #000 30%, rgba(0, 0, 0, .88) 46%, rgba(0, 0, 0, .48) 64%, rgba(0, 0, 0, .1) 82%, transparent 98%),
+    linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, #000 15%, #000 85%, transparent 100%);
+  mask-composite: intersect;
 }
 
 .services-photo-shape,
