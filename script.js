@@ -22,6 +22,16 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeMenu();
 });
 
+document.addEventListener("click", (event) => {
+  if (!navLinks?.classList.contains("is-open")) return;
+  if (navLinks.contains(event.target) || navToggle?.contains(event.target)) return;
+  closeMenu();
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 980) closeMenu();
+});
+
 const siteHeader = document.querySelector(".site-header");
 
 function updateHeaderScrollState() {
@@ -117,3 +127,75 @@ if (revealTargets.length && "IntersectionObserver" in window) {
 
   revealTargets.forEach((target) => revealObserver.observe(target));
 }
+
+document.querySelectorAll(".service-card").forEach((card) => {
+  function toggleCard() {
+    card.classList.add("is-click-controlled");
+    card.classList.toggle("is-flipped");
+  }
+
+  card.addEventListener("click", toggleCard);
+  card.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+    event.preventDefault();
+    toggleCard();
+  });
+});
+
+document.querySelectorAll(".faq__list details").forEach((details) => {
+  const summary = details.querySelector("summary");
+  if (!summary) return;
+
+  let animation;
+  let isClosing = false;
+  let isExpanding = false;
+
+  function finishAnimation(open) {
+    details.open = open;
+    animation = null;
+    isClosing = false;
+    isExpanding = false;
+    details.style.height = "";
+    details.style.overflow = "";
+  }
+
+  function closeDetails() {
+    isClosing = true;
+    const startHeight = `${details.offsetHeight}px`;
+    const endHeight = `${summary.offsetHeight}px`;
+
+    animation?.cancel();
+    animation = details.animate(
+      { height: [startHeight, endHeight] },
+      { duration: 280, easing: "cubic-bezier(.2, .75, .25, 1)" }
+    );
+    animation.onfinish = () => finishAnimation(false);
+    animation.oncancel = () => { isClosing = false; };
+  }
+
+  function openDetails() {
+    isExpanding = true;
+    const startHeight = `${details.offsetHeight}px`;
+    details.open = true;
+    const endHeight = `${details.scrollHeight}px`;
+
+    animation?.cancel();
+    animation = details.animate(
+      { height: [startHeight, endHeight] },
+      { duration: 320, easing: "cubic-bezier(.2, .75, .25, 1)" }
+    );
+    animation.onfinish = () => finishAnimation(true);
+    animation.oncancel = () => { isExpanding = false; };
+  }
+
+  summary.addEventListener("click", (event) => {
+    event.preventDefault();
+    details.style.overflow = "hidden";
+
+    if (isClosing || !details.open) {
+      openDetails();
+    } else if (isExpanding || details.open) {
+      closeDetails();
+    }
+  });
+});
